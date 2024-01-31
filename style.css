@@ -1,27 +1,65 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 50px;
+  background-color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.menu {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
+.menu-container {
+  background: #fff url('paper-texture.png') repeat;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.menu h1 {
-    color: #333;
+header h1 {
+  font-size: 3em;
+  margin: 0.5em 0;
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0;
+header h2 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  color: #555;
 }
 
-.menu ul li {
-    font-size: 18px;
-    border-bottom: 1px solid #ddd;
-    padding: 8px 0;
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-item img {
+  width: 50px; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.menu-name {
+  display: block;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.menu-price {
+  display: block;
+  font-size: 1em;
+  color: #666;
+}
+
+footer {
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 5px 0;
 }
